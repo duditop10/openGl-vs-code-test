@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/gianf/OneDrive/Documentos/openGl vs code test/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DGLFW_DLL -I\"C:/Users/gianf/OneDrive/Documentos/openGl vs code test/dependencies\" -O3 -DNDEBUG -o CMakeFiles\\hello_window.dir\\src\\main.cpp.obj -c \"C:\\Users\\gianf\\OneDrive\\Documentos\\openGl vs code test\\src\\main.cpp\"",
+  "file": "C:/Users/gianf/OneDrive/Documentos/openGl vs code test/src/main.cpp",
+  "output": "C:/Users/gianf/OneDrive/Documentos/openGl vs code test/build/CMakeFiles/hello_window.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/gianf/OneDrive/Documentos/openGl vs code test/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DGLFW_DLL -I\"C:/Users/gianf/OneDrive/Documentos/openGl vs code test/dependencies\" -O3 -DNDEBUG -o CMakeFiles\\hello_window.dir\\src\\glad.c.obj -c \"C:\\Users\\gianf\\OneDrive\\Documentos\\openGl vs code test\\src\\glad.c\"",
+  "file": "C:/Users/gianf/OneDrive/Documentos/openGl vs code test/src/glad.c",
+  "output": "C:/Users/gianf/OneDrive/Documentos/openGl vs code test/build/CMakeFiles/hello_window.dir/src/glad.c.obj"
+}
+]
