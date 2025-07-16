@@ -2,6 +2,7 @@ Simple Beginner OpenGL Falling Circle
 =====================================
 
 ***This is just a simple begginer openGL program so i can learn some stuff.***
+---
 
 This program essentialy just renders a 2d circle and makes it fall to the bottom of screen with an acceleration of 9.8 units (A.K.A *Gravity*).
 
