@@ -6,7 +6,7 @@ Simple Beginner OpenGL Falling Circle
 
 This program essentialy just renders a 2d circle and makes it fall to the bottom of screen with an acceleration of 9.8 units (A.K.A *Gravity*).
 
-The circel also collides with the borders of the screen and can be controlled with the arrow keys or WASD.
+The circle also collides with the borders of the screen, changes color depending on its position, and can be controlled with the arrow keys or WASD.
 
 There's also a ***lot*** of friction because it's essentially impossible to stop the ball if it gains too much velocity (not really it just takes a long time)
 
