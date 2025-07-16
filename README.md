@@ -16,4 +16,4 @@ I still have a few problems with VAOs and VBOs but i'll get the hang of it.
 
 ---
 # How to run it
- Just run the exe inside the folder called "just run the exe in this folder". Pretty self-explanatory.
+ Just run the exe inside the folder called "just run the exe in this folder". Just make sure that you are running _inside_ that folder (or another folder with all the files inside that folder). Pretty self-explanatory.
