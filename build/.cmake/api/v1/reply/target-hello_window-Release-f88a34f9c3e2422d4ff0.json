@@ -114,7 +114,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\msys64\\mingw64\\lib\\libglfw3.dll.a",
+				"fragment" : "C:/msys64/mingw64/lib/libglfw3.dll.a",
 				"role" : "libraries"
 			},
 			{
