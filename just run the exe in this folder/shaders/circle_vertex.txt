@@ -1,10 +1,16 @@
 #version 330 core
 layout (location = 0) in vec3 aPos;
+out vec4 fragmentColor;
+
 
 uniform mat4 projection;
 uniform mat4 model; // Add a model matrix uniform
 
 void main()
 {
-    gl_Position = projection * model * vec4(aPos.x, aPos.y, aPos.z, 1.0);
+    vec4 clipSpacePos = projection * model * vec4(aPos, 1.0);
+    gl_Position = clipSpacePos;
+    vec3 ndcPos = clipSpacePos.xyz / clipSpacePos.w;
+    vec3 colorFromNDC = (ndcPos + 1.0) / 2.0;
+    fragmentColor=vec4(colorFromNDC,1.0);
 }

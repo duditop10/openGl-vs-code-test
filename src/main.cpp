@@ -102,7 +102,7 @@ int main(){
         float aspectRatio = static_cast<float>(currentWidth) / static_cast<float>(currentHeight);
         float oldOrthoWidth = orthoWidth;
         float oldOrthoHeight = orthoHeight;
-        float frictionStrength=1.0f;
+        float frictionStrength=3.0f;
         
         orthoWidth = orthoHeight * aspectRatio;
         if (oldOrthoWidth != orthoWidth || oldOrthoHeight != orthoHeight) {
@@ -139,11 +139,23 @@ int main(){
                     velocity.x += frictionDirection * frictionMagnitude;
                 }
             }
+            if (glm::abs(velocity.y) > 0.001f) {
+                float frictionDirection = -glm::sign(velocity.y); 
+                float frictionMagnitude = frictionStrength * deltaTime;
+
+                
+                if (glm::abs(velocity.y) < frictionMagnitude) {
+                    velocity.y = 0.0f;
+                } else {
+                    velocity.y += frictionDirection * frictionMagnitude;
+                }
+            }
         } else {
             if (isWindowIconified) {
                 velocity = glm::vec3(0.0f);
             }
         }
+        
 
         
         if (position.x + radius > orthoWidth) {
@@ -206,16 +218,16 @@ void processInput(GLFWwindow *window, glm::vec3& velocity){
         glfwSetWindowShouldClose(window,true);
     }
     if(glfwGetKey(window, GLFW_KEY_LEFT)==GLFW_PRESS||glfwGetKey(window,GLFW_KEY_A)==GLFW_PRESS){
-        velocity.x+=2.0f;
+        velocity.x-=10.0f*deltaTime;
     }
     else if(glfwGetKey(window, GLFW_KEY_RIGHT)==GLFW_PRESS||glfwGetKey(window,GLFW_KEY_D)==GLFW_PRESS){
-        velocity.x-=2.0f;
+        velocity.x+=10.0f*deltaTime;
     }
     if(glfwGetKey(window, GLFW_KEY_UP)==GLFW_PRESS||glfwGetKey(window,GLFW_KEY_W)==GLFW_PRESS){
-        velocity.y+=2.0f;
+        velocity.y+=20.0f*deltaTime;
     }
     else if(glfwGetKey(window, GLFW_KEY_DOWN)==GLFW_PRESS||glfwGetKey(window,GLFW_KEY_S)==GLFW_PRESS){
-        velocity.y-=2.0f;
+        velocity.y-=10.0f*deltaTime;
     }
 
 }
