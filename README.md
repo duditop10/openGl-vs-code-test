@@ -13,6 +13,7 @@ There's also a _lot_ of friction because it's essentially impossible to stop the
 This helped me learn a bit about rendering and shaders as well as some basic c++ programming and how a GPU works.
 
 I still have a few problems with VAOs and VBOs but i'll get the hang of it.
+
 ---
 # How to run it
  Just run the exe inside the folder called "just run the exe in this folder". Pretty self-explanatory.
